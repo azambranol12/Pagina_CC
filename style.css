@@ -1,7 +1,11 @@
+/*El bossy el fondo de todo la caja principal*/
 body {
   padding: 0.1px;
   margin:0 auto;    
+  background-color: #749b7567;
 }
+
+/*La cabeza principal donde se encuentra el navegador y el menú que tiene una lista*/
 header{
     width: 1885px;
     background-color: green;
@@ -22,6 +26,8 @@ header h1{
 header img{
     padding-left: 70px;
 }
+
+/*Es los ajustes del buscador pero no se puede utilizar es visual simplemente*/
 header input[type="text"]{
     float: left;
     padding: 5px;
@@ -43,7 +49,7 @@ nav{
 }
 
 nav ul li{
-    display: inline-block; /*Mantenie las propiedades bel bloque pero los pone en línea*/
+    display: inline-block;
     padding: 8px;
 }
 
@@ -52,7 +58,7 @@ nav ul li a{
     padding: 15px;
     color: white;
     font-weight: bold;
-    transition: background 0.3s, color 0.3s;
+    transition: background 0.3s, color 0.3s; /*Una pequeña transicion para que se vea dinamica la lista del menu*/
 }
 
 nav ul li a:hover{
@@ -61,18 +67,11 @@ nav ul li a:hover{
     color: yellow;
 }
 
-.cajal {
-  float: left;
-  width: 150px;
-  background-color: rgb(0, 128, 0, 0.5);
-  padding-bottom: 50%;
-}
-
 .titulo1{
     width: 1000px;
     padding: 10px;
-    margin-top: 8%;
-    margin-left: 25%;
+    margin: auto;
+    margin-top: 150px;
     text-align: center;
     background-color: rgba(0, 190, 0);
     color: rgb(0, 0, 0);
@@ -80,12 +79,13 @@ nav ul li a:hover{
     box-shadow: 2px 2px 2px rgb(0, 0, 0, 0.3);
 }
 
+/*Ahora viene esta parte en la cual he usado para las cajas de informacion y los titulos*/
 .cuerpo{
     width: 1500px;
     padding: 10px;
     padding-left: 20px;
+    margin:auto;
     margin-top: 100px;
-    margin-left: 250px;
     text-align: left;
     background-color: rgb(83, 179, 83);
     color: rgb(0, 0, 0);
@@ -111,6 +111,7 @@ nav ul li a:hover{
     margin-top: 10px;
 }
 
+/*Aquí es como he ajustado las imagenes del punto uno*/
 .imagen1 {
     float: right;
     width: 300px;
@@ -124,6 +125,7 @@ nav ul li a:hover{
     border-radius: 8px;
 }
 
+/*Aquí es como he ajustado las imagenes del punto dos*/
 .imagen2{
     float: right;
     width: 300px;
@@ -138,6 +140,7 @@ nav ul li a:hover{
     border-radius: 8px;
 }
 
+/*Aquí es como he ajustado las imagenes del punto tres*/
 .imagen3{
     float: right;
     width: 300px;
@@ -151,6 +154,7 @@ nav ul li a:hover{
     border-radius: 8px;
 }
 
+/*Estos son los ajustes de la table el clear bopth es para limpiar el float*/
 table{
     width: 900px;
     border-collapse: collapse;
@@ -174,6 +178,7 @@ table th {
     font-weight: bold;
 }
 
+/*Aquí es como he ajustado las imagenes del punto 4 para que se alinearan*/
 .imagenes-doble {
     overflow: hidden;
 }
@@ -192,6 +197,7 @@ table th {
     display: inline-block;
 }
 
+/*La informacion que va al pie de las dos imagenes*/ 
 .info-img {
     margin-top: 10px;
     font-size: 14px;
@@ -201,13 +207,69 @@ table th {
     font-size: larger;
 }
 
+/*Y el pie de pagina con los derechos de autor*/
 footer {
   background-color: #222;
   color: #fff;
   text-align: center;
   padding: 15px;
   bottom: 0;
-  width: 100%;
+  width: 1885px;
   font-family: Arial, sans-serif;
   font-size: 14px;
 }
+
+/*Los ajustes del formulario*/
+
+form{
+    width: 20%;
+    height: 90%;
+    background-color: rgb(46, 145, 3);
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px;
+    border: solid rgb(0, 77, 10) 0.5px;
+    border-radius: 6px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
+
+fieldset{
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 77, 10, 0.7);
+  border-radius: 6px;
+}
+
+legend{
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+button {
+  margin-top: 10px;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 77, 10, 0.7);
+  background-color: white;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: rgb(0, 100, 0);
+  color: white;
+  font-weight: bold;
+}
+
